@@ -1,5 +1,6 @@
 package com.example.calculadora;
 
+import static android.view.View.INVISIBLE;
 import static android.view.View.VISIBLE;
 
 import android.os.Bundle;
@@ -58,10 +59,12 @@ public class ViagemActivity extends AppCompatActivity implements View.OnClickLis
         EditText etPrecoPorLitro = findViewById(R.id.etnPrecoPorLitro);
         EditText etDistancia = findViewById(R.id.etnDistancia);
         EditText etMediaVeiculo = findViewById(R.id.etnMediaVeiculo);
+        TextView etGastotal = findViewById(R.id.txtGastoTotal);
 
         etPrecoPorLitro.setText("");
         etDistancia.setText("");
         etMediaVeiculo.setText("");
+        etGastotal.setVisibility(INVISIBLE);
         etPrecoPorLitro.requestFocus();
     }
 
