@@ -6,5 +6,6 @@ Sobre o projeto:
     1 - Preço por litro do combustível
     2 - A distância a ser percorrida
     3 - A média do veículo
+  
 De posse dessas informações é calculado o valor total necessário para chehar ao destino
 Além disso um botão de limpar os campos e de voltar para a tela principal 
