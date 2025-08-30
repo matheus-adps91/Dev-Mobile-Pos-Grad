@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="8sp"
+    tools:context=".ViagemActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:barrierMargin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:text="@string/gasto_viagem"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txtPrecoPorLitro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/preco_por_litro"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etnPrecoPorLitro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8sp"
+            android:ems="10"
+            android:hint="@string/txt_hint_preco_comb"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/txtDistancia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_distancia"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etnDistancia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8sp"
+            android:ems="10"
+            android:hint="@string/txt_hint_distancia"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/txtMediaVeiculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_media_veiculo"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etnMediaVeiculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25sp"
+            android:ems="10"
+            android:hint="@string/txt_hint_media_veiculo"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/txtGastoTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15sp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btnCalcularViagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:text="@string/calcular" />
+
+        <Button
+            android:id="@+id/btnLimpar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_limpar" />
+
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/voltar"/>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
